@@ -30,7 +30,7 @@ if __name__ == "__main__":
                 number_of_completed_tasks += 1
                 tasks_completed.append(todo["title"])
 
-    print(f"Employee {user_name} is done with\
-        tasks({number_of_completed_tasks}/{number_of_tasks}):")
+    print(f"Employee {user_name} is done with \
+tasks({number_of_completed_tasks}/{number_of_tasks}):")
     for task in tasks_completed:
-        print(f"     {task}")
+        print(f"\t {task}")
