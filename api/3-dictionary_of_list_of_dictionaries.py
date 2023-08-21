@@ -20,7 +20,6 @@ if __name__ == "__main__":
     main_dict = {}
     for user in users:
         main_dict[user["id"]] = []
-    print(main_dict)
 
     my_dict = {}
     for todo in todos:
@@ -37,7 +36,5 @@ if __name__ == "__main__":
             }
             main_dict[userId].append(dict_item)
 
-        print(main_dict)
-
     with open(file_name, "w") as json_file:
-        json.dump(main_dict, json_file)
+        json.dump(main_dict, json_file, indent=4)
