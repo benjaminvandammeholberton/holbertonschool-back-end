@@ -34,7 +34,5 @@ if __name__ == "__main__":
                 })
     my_dict = {user_id: my_list}
 
-    print(my_dict)
-
     with open(file_name, "w") as json_file:
         json.dump(my_dict, json_file)
