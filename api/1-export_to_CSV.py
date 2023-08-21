@@ -26,10 +26,9 @@ if __name__ == "__main__":
     my_list = []
     for todo in todos:
         if todo["userId"] == int(user_id):
-            my_list.append([str(todo["userId"]), str(user_name), str(todo["completed"]), str(todo["title"])])
-    print(my_list)
+            my_list.append([todo["userId"], user_name,\
+                            todo["completed"], todo["title"]])
 
-  
     with open(file_name, "w") as csv_file:
         csv_writer = csv.writer(csv_file)
         for item in my_list:
