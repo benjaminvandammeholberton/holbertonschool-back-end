@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
 This is a function called 'add' that takes two float numbers as
 input and returns their sum as a float.
