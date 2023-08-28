@@ -8,6 +8,7 @@ result = add(3.5, 2.7)
 print(result)  # Output: 6.2
 """
 
+
 def add(a: float, b: float) -> float:
     """
     This function takes two float numbers as input and returns their
